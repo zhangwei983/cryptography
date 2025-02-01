@@ -10,6 +10,7 @@ fn send_message(key: &[u8], message: &[u8]) -> Vec<u8> {
 }
 
 fn receive_message(key: &[u8], message: &[u8], authentication_tag: &[u8]) -> bool {
+    // With 256 bits tag.
     let mut mac = Hmac::<Sha256>::new(key.into());
     mac.update(message);
 
@@ -17,6 +18,7 @@ fn receive_message(key: &[u8], message: &[u8], authentication_tag: &[u8]) -> boo
 }
 
 fn generate_key() -> Vec<u8> {
+    // Use a key with 512 bits.
     let mut key = vec![0u8; 64];
     rng()
         .try_fill_bytes(&mut key[..])
