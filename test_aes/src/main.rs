@@ -8,7 +8,7 @@ fn main() {
     let key = GenericArray::from([0u8; 16]);
     println!("{}", hex::encode(key.as_slice()));
 
-    // Initialize block to all 42s.
+    // Initialize 128bits block to all 42s.
     let mut block = GenericArray::from([42u8; 16]);
     println!("{}", hex::encode(block.as_slice()));
     
