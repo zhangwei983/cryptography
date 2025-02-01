@@ -57,14 +57,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hashing"
-version = "0.1.0"
-dependencies = [
- "sha2",
- "sha3",
-]
-
-[[package]]
 name = "keccak"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -98,6 +90,14 @@ checksum = "75872d278a8f37ef87fa0ddbda7802605cb18344497949862c0d4dcb291eba60"
 dependencies = [
  "digest",
  "keccak",
+]
+
+[[package]]
+name = "test_hashing"
+version = "0.1.0"
+dependencies = [
+ "sha2",
+ "sha3",
 ]
 
 [[package]]
