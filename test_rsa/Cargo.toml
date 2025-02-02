@@ -1,0 +1,9 @@
+[package]
+name = "test_rsa"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hex = "0.4.3"
+rand = "0.8.0"
+rsa = { version = "0.9.7", features = ["sha2"] }
