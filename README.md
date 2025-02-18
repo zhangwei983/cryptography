@@ -1,2 +1,2 @@
-# cryptography
-Learning notes for cryptography
+# Cryptography
+Learning notes for cryptography.
