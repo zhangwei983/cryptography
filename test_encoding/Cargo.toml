@@ -1,0 +1,8 @@
+[package]
+name = "test_encoding"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = "0.13.1"
+pem = "3.0.4"
