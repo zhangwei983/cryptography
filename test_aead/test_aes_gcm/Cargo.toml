@@ -1,7 +1,0 @@
-[package]
-name = "test_aes_gcm"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-aes-gcm = { version = "0.10.3", features = ["heapless"] }
