@@ -26,7 +26,7 @@ pub fn test() {
     println!("Encoded standard: {}", encode(data));
     let encoded = encode_config(data, base64::URL_SAFE);
     println!("Encoded URL safe: {}", encoded);
-    
+
     let bytes = decode_config(encoded, base64::URL_SAFE).unwrap();
     let result = String::from_utf8(bytes).unwrap();
     println!("Decoded URL safe: {}", result);
