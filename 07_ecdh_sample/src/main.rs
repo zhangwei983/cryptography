@@ -1,3 +1,8 @@
+mod basic_usage;
+mod server_client;
+
 fn main() {
-    println!("Hello, world!");
+    basic_usage::test();
+    println!("");
+    server_client::test();
 }
