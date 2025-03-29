@@ -1,3 +1,4 @@
+pub mod call_builder;
 pub mod connect_eth_node;
 pub mod http_provider;
 pub mod http_provider_multi_threads;
@@ -9,6 +10,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     http_provider::test().await?;
     println!("");
     http_provider_multi_threads::test().await?;
+    println!("");
+    call_builder::test().await?;
 
     Ok(())
 }
